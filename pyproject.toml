@@ -12,6 +12,8 @@ dependencies = [
     "pandas (>=2.3.2,<3.0.0)"
 ]
 
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
@@ -22,3 +24,9 @@ pre-commit = "^4.3.0"
 black = "^25.1.0"
 isort = "^6.0.1"
 flake8 = "^7.3.0"
+pytest = "^8.4.2"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
