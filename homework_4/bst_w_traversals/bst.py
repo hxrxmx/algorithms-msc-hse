@@ -30,11 +30,6 @@ class BST:
                     return
                 node = node.right
 
-    def remove(self, value):
-        node = self.root
-        while True:
-            node
-
     #  не лучшая идея делать все рекурсией, но так писать быстрее
     def preorder(self):
         return self._preorder(self.root)
